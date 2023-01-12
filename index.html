@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+            rel="stylesheet" />
+    </head>
+    <body class="w-full h-screen bg-gray">
+        <main
+            class="w-[591px] mx-auto h-screen flex items-center flex-col justify-evenly py-8">
+            <div class="textos text-center">
+                <h1 class="text-[#020246] font-bold pb-6 text-3xl">
+                    Where should we sent the order?
+                </h1>
+                <p class="text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore.
+                </p>
+            </div>
+
+            <img src="./src/assets/img/linea-1.png" alt="" />
+
+            <!-- Formulario -->
+
+            <form
+                action=""
+                class="bg-white border border-gray-50 w-full h-max rounded-2xl shadow-lg shadow-gray-300 p-7">
+                <div class="informacion">
+                    <span class="font-medium text-lg text-gray-800"
+                        >Billing Adress</span
+                    >
+                </div>
+
+                <!-- Rellenar formularios    -->
+
+                <div
+                    class="Datos-rellenar py-4 text-gray-600 flex flex-col gap-4">
+                    <!-- Nombres -->
+                    <div
+                        class="w-full text-gray-600 flex justify-between gap-6">
+                        <div class="flex flex-col w-1/2 gap-1">
+                            <span>First Name</span>
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                class="border outline-none h-8 rounded-md placeholder:text-gray-600 px-4 py-[18px]"
+                                placeholder="Never" />
+                        </div>
+
+                        <div class="flex flex-col w-1/2 gap-1">
+                            <span>Last Name</span>
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                class="border outline-none h-8 rounded-md placeholder:text-gray-600 px-4 py-[18px]"
+                                placeholder="Day" />
+                        </div>
+                    </div>
+
+                    <!-- email -->
+                    <div class="flex flex-col gap-1  relative">
+                        <span>Email</span>
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="border outline-none h-8 rounded-md placeholder:text-gray-600 px-7 py-[18px]"
+                            placeholder="Never.day@gmail.com" />
+
+                            
+                            <i class="ri-mail-line text-gray-500 absolute top-9 left-2"></i>
+                                <img
+                                src="./src/assets/img/Check icon.png"
+                                alt=""
+                                class="w-5 h-5 object-cover absolute top-9 right-2 " />
+                        
+                    </div>
+
+                    <!-- Street -->
+
+                    <div class="flex flex-col gap-1">
+                        <span>Street Adress</span>
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="border outline-none h-8 rounded-md placeholder:text-gray-600 px-4 py-[18px]"
+                            placeholder="Narnia Street #256" />
+                    </div>
+
+                    <!-- State  -->
+
+                    <div
+                        class="w-full text-gray-600 flex justify-between gap-6">
+                        <div class="flex flex-col w-1/2 gap-1">
+                            <span>State/Province</span>
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                class="border outline-none h-8 rounded-md placeholder:text-gray-600 px-4 py-[18px]"
+                                placeholder="Los Angeles" />
+                        </div>
+
+                        <div class="flex flex-col w-1/2 gap-1">
+                            <span>City</span>
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                class="border outline-none h-8 rounded-md placeholder:text-gray-600 px-4 py-[18px]"
+                                placeholder="San Rose" />
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+
+                    <div
+                        class="w-full text-gray-600 flex justify-between gap-6">
+                        <div class="flex flex-col w-1/2 gap-1">
+                            <span>Zip/Postal Code</span>
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                class="border outline-none h-8 rounded-md placeholder:text-gray-600 px-4 py-[18px]"
+                                placeholder="22341" />
+                        </div>
+
+                        <div class="flex flex-col w-1/2 gap-1 relative">
+                            <span>Phone number</span>
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                class="border outline-none h-8 rounded-md placeholder:text-gray-600 pl-11 py-[18px]"
+                                placeholder="+1 (555) 000-0000" />
+                                
+                                <div class="flex gap-[1px] absolute top-9 px-[8px]">
+                                  <span>US</span>
+                                  <i class="ri-arrow-down-s-line"></i>
+                                </div>
+                                
+                                
+                                
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ckeck -->
+
+                <div class="flex flex-col gap-2 pb-12 text-gray-700">
+                    <div class="flex gap-1 items-center">
+                        <input type="checkbox" name="" id="" class="" />
+                        <p>My Billing and shipping adress are the same</p>
+                    </div>
+
+                    <div class="flex gap-1 items-center">
+                        <input type="checkbox" name="" id="" />
+                        <p>Create an account for 10% off the purchase</p>
+                    </div>
+                </div>
+
+                <!-- parte final -->
+                <div class="flex justify-between">
+                    <img src="./src/assets/img/Norton Icon.png" alt="" class="object-contain" />
+                    <a href="./src/pages/pago-parte2.html"
+                        class="flex items-center justify-center h-8 border py-5 w-2/4 rounded-md bg-[#020246] text-white gap-2">
+                        <span class="font-medium">Next</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+                
+            </form>
+            
+        </main>
+
+        <script type="module" src="/src/js/main.js"></script>
+    </body>
+</html>
+
